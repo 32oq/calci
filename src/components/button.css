@@ -1,0 +1,25 @@
+.btn-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.btn {
+    width: 45px;
+    height: 45px;
+    border: 1px solid black;
+    border-radius: 50px;
+    margin: 10px 2px;
+    text-align: center;
+    font-size: medium;
+}
+.btn-zero {
+    width: 90px;
+    height: 45px;
+    border: 1px solid black;
+    border-radius: 50px;
+    margin: 10px 2px;
+    text-align: center;
+    font-size: medium;
+}
+
