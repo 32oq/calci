@@ -23,6 +23,13 @@ const Button = ({btnUpdate}) => {
             }, 400)
             return btnUpdate('WRONG INPUT')
         }
+        else if([...operations, "=", "+/-", ].includes(val) && [...operations, "=", "+/-", ].includes(inputs[inputs.length-1])) {
+            btnUpdate('WRONG INPUT')
+            setTimeout(() => {
+                btnUpdate(inputs.join(""))
+            }, 400)
+            return
+        }
         
         // console.log("sssssssssssss",val)
         if(val == "=" || val == "+/-"){
